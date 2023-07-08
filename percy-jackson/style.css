@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    padding: 30px;
+    background-color: lightgrey;
+}
+
+#title > h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+#title > h3 {
+    margin-left: 340px;
+}
+
+.titulo{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: lightgrey;
+    border: 1PX groove black;
+  }
+
+#card {
+  padding: 5%;
+}
+
+#card > h2{
+    font-size: 48px;
+}
+
+#box {
+  display: flex;
+  font-size: 1.5em;
+}
+
+img{
+  height: 400px;
+  width: 25%;
+  margin-right: 20px;
+}
