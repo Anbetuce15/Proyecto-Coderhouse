@@ -4,7 +4,10 @@
 
 #title {
     padding: 30px;
-    background-color: lightgrey;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/banner.jpg)
 }
 
 #title > h1 {
@@ -12,9 +15,6 @@
     text-align: center;
 }
 
-#title > h3 {
-    margin-left: 340px;
-}
 
 .titulo{
     font-family: 'Goudy Bookletter 1911', serif;
@@ -41,8 +41,8 @@ ul {
   }
   
   li a:hover {
-    background-color: lightgrey;
-    border: 1PX groove black;
+    background-color: rgba(6, 151, 115, 0.527);
+    border: 1PX groove rgba(0, 233, 175, 0.699);
   }
 
 #card {
@@ -62,4 +62,16 @@ img{
   height: 400px;
   width: 25%;
   margin-right: 20px;
+}
+body {
+  background-image: url(./img/backgrowun.jpg);
+  background-position: center center;
+  background-repeat: no-repeat ;
+  background-size: cover;
+}
+.byrick {
+  text-align: center
+}
+footer{
+  text-align: center;
 }
