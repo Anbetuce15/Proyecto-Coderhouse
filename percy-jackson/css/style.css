@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/percy-jackson/img/backgrowun.jpg);
+}
+
+header .banner {
+  background-image: url(/percy-jackson/img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+}
+header h1 {
+  font-size: 5em;
+  font-family: "Goudy Bookletter 1911", serif;
+}
+header nav:hover {
+  color: #264653;
+}/*# sourceMappingURL=style.css.map */

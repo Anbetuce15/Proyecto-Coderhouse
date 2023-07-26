@@ -4,71 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <title>Percy Jackson</title>
 </head>
 <body>
-    <header id="banner">
-        <div id="title">
-            <h1 class="titulo">Percy Jackson y los Dioses del Olimpo</h1>
-            <h3 class="byrick">by Rick Riordan</h3>
+    <header>
+        <div class="banner">
+            <h1 class="text-center">Percy Jackson y los Dioses del Olimpo</h1>
+            <h3 class="text-center">by Rick Riordan</h3>
         </div>
-        <nav>
-            <ul id="tabs">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="universo-riordan.html"> El Universo Riondan</a></li>
-                <li><a href="autor.html">El Autor</a> </li>
-                <li><a href="libros.html">Los Libros</a> </li>
-                <li><a href="personajes.html">Los Personajes</a> </li>
-                <li><a href="serie.html"> La Serie</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link link-dark " href="universo-riordan.html">El Universo Riondan</a>
+                    <a class="nav-link link-dark" href="autor.html">El Autor</a>
+                    <a class="nav-link link-dark" href="libros.html">Los Libros</a>
+                    <a class="nav-link link-dark" href="personajes.html">Los Personajes</a>
+                    <a class="nav-link link-dark" href="serie.html">La Serie</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <div id="card">
-    <h2 class="titulo"> Los Libros</h2>
-        <div id="box">
-            <br>
-            <img src="img/ladron_del_rayo_el_2014_300_rgb.jpg" alt="Percy Jackson">
-            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor dolor ut dui tristique, ut eleifend odio commodo. Nulla rutrum sagittis purus id congue. Aenean posuere tempus porta. Cras sem libero, iaculis in fringilla eget, iaculis id augue. Etiam ultricies, nunc in sodales vestibulum, dolor purus ultrices dui, at sodales ex lectus ut risus. Suspendisse in sollicitudin lectus. Suspendisse potenti. Suspendisse posuere metus sed faucibus gravida. Nullam faucibus euismod ipsum, id efficitur tortor semper quis. Aliquam gravida, urna quis consequat laoreet, libero erat condimentum nisi, vitae consequat metus est ac lectus. Integer sapien nisi, consequat mollis augue ac, aliquet feugiat lorem. Mauris eu molestie lacus, ut lobortis lacus.
-
-            <br> Mauris sit amet magna eu purus mattis placerat faucibus ac ex. Sed consectetur magna nec magna sodales, eu laoreet mauris tincidunt. Praesent gravida velit ac est congue blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc egestas suscipit quam nec sodales. Nulla vestibulum convallis risus vel eleifend. Etiam dignissim sed massa et convallis. Nam ornare, lorem posuere aliquet scelerisque, risus augue condimentum sapien, in suscipit lectus lorem sed orci. Nunc eget maximus tortor. Duis rhoncus neque ut turpis tristique eleifend. Sed facilisis ligula orci, sit amet consequat dolor auctor vel. Proin auctor velit non odio ultricies, sit amet iaculis eros semper. Sed ornare quam at tellus hendrerit ornare.</p>
+    <div class="fs-1">
+    <p>Los Libros</p>
+    </div>
+            
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/ladron_del_rayo_el_2014_300_rgb.jpg" class="img-fluid rounded-start" alt="Ladron del Rayo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">El Ladron del Rayo </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia nobis earum illo, ullam eius numquam cum amet blanditiis, labore quo ratione, aperiam iste pariatur velit iusto veniam itaque. Sequi!</p>
+            </div>
+          </div>
         </div>
-        <br>
-        <div id="box">
-            <img src="img/el mar de los monstruos.png" alt="Percy Jackson">
-            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor dolor ut dui tristique, ut eleifend odio commodo. Nulla rutrum sagittis purus id congue. Aenean posuere tempus porta. Cras sem libero, iaculis in fringilla eget, iaculis id augue. Etiam ultricies, nunc in sodales vestibulum, dolor purus ultrices dui, at sodales ex lectus ut risus. Suspendisse in sollicitudin lectus. Suspendisse potenti. Suspendisse posuere metus sed faucibus gravida. Nullam faucibus euismod ipsum, id efficitur tortor semper quis. Aliquam gravida, urna quis consequat laoreet, libero erat condimentum nisi, vitae consequat metus est ac lectus. Integer sapien nisi, consequat mollis augue ac, aliquet feugiat lorem. Mauris eu molestie lacus, ut lobortis lacus.
-
-            <br> Mauris sit amet magna eu purus mattis placerat faucibus ac ex. Sed consectetur magna nec magna sodales, eu laoreet mauris tincidunt. Praesent gravida velit ac est congue blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc egestas suscipit quam nec sodales. Nulla vestibulum convallis risus vel eleifend. Etiam dignissim sed massa et convallis. Nam ornare, lorem posuere aliquet scelerisque, risus augue condimentum sapien, in suscipit lectus lorem sed orci. Nunc eget maximus tortor. Duis rhoncus neque ut turpis tristique eleifend. Sed facilisis ligula orci, sit amet consequat dolor auctor vel. Proin auctor velit non odio ultricies, sit amet iaculis eros semper. Sed ornare quam at tellus hendrerit ornare.</p>
+      </div>
         </div>
-        <br>
-        <div id="box">
-            <img src="img/la maldicion del titan.png" alt="Percy Jackson">
-            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor dolor ut dui tristique, ut eleifend odio commodo. Nulla rutrum sagittis purus id congue. Aenean posuere tempus porta. Cras sem libero, iaculis in fringilla eget, iaculis id augue. Etiam ultricies, nunc in sodales vestibulum, dolor purus ultrices dui, at sodales ex lectus ut risus. Suspendisse in sollicitudin lectus. Suspendisse potenti. Suspendisse posuere metus sed faucibus gravida. Nullam faucibus euismod ipsum, id efficitur tortor semper quis. Aliquam gravida, urna quis consequat laoreet, libero erat condimentum nisi, vitae consequat metus est ac lectus. Integer sapien nisi, consequat mollis augue ac, aliquet feugiat lorem. Mauris eu molestie lacus, ut lobortis lacus.
 
-            <br> Mauris sit amet magna eu purus mattis placerat faucibus ac ex. Sed consectetur magna nec magna sodales, eu laoreet mauris tincidunt. Praesent gravida velit ac est congue blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc egestas suscipit quam nec sodales. Nulla vestibulum convallis risus vel eleifend. Etiam dignissim sed massa et convallis. Nam ornare, lorem posuere aliquet scelerisque, risus augue condimentum sapien, in suscipit lectus lorem sed orci. Nunc eget maximus tortor. Duis rhoncus neque ut turpis tristique eleifend. Sed facilisis ligula orci, sit amet consequat dolor auctor vel. Proin auctor velit non odio ultricies, sit amet iaculis eros semper. Sed ornare quam at tellus hendrerit ornare.</p>
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/el mar de los monstruos.png" class="img-fluid rounded-start" alt="El Mar de  los monstruos">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">El Mar de los Monstruos </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aperiam porro id, laborum quam libero quod iure reiciendis hic sit officiis, aliquam impedit. Adipisci atque quam placeat, laborum perferendis ad!</p>
+
+            </div>
+          </div>
         </div>
-        <br>
-        <div id="box">
-            <img src="img/la batalla del laberinto.png" alt="Percy Jackson">
-            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor dolor ut dui tristique, ut eleifend odio commodo. Nulla rutrum sagittis purus id congue. Aenean posuere tempus porta. Cras sem libero, iaculis in fringilla eget, iaculis id augue. Etiam ultricies, nunc in sodales vestibulum, dolor purus ultrices dui, at sodales ex lectus ut risus. Suspendisse in sollicitudin lectus. Suspendisse potenti. Suspendisse posuere metus sed faucibus gravida. Nullam faucibus euismod ipsum, id efficitur tortor semper quis. Aliquam gravida, urna quis consequat laoreet, libero erat condimentum nisi, vitae consequat metus est ac lectus. Integer sapien nisi, consequat mollis augue ac, aliquet feugiat lorem. Mauris eu molestie lacus, ut lobortis lacus.
-
-            <br> Mauris sit amet magna eu purus mattis placerat faucibus ac ex. Sed consectetur magna nec magna sodales, eu laoreet mauris tincidunt. Praesent gravida velit ac est congue blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc egestas suscipit quam nec sodales. Nulla vestibulum convallis risus vel eleifend. Etiam dignissim sed massa et convallis. Nam ornare, lorem posuere aliquet scelerisque, risus augue condimentum sapien, in suscipit lectus lorem sed orci. Nunc eget maximus tortor. Duis rhoncus neque ut turpis tristique eleifend. Sed facilisis ligula orci, sit amet consequat dolor auctor vel. Proin auctor velit non odio ultricies, sit amet iaculis eros semper. Sed ornare quam at tellus hendrerit ornare.</p>
+      </div>
         </div>
-        <br>
-        <div id="box">
-            <img src="img/el ultimo heroe del olimp.png" alt="Percy Jackson">
-            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor dolor ut dui tristique, ut eleifend odio commodo. Nulla rutrum sagittis purus id congue. Aenean posuere tempus porta. Cras sem libero, iaculis in fringilla eget, iaculis id augue. Etiam ultricies, nunc in sodales vestibulum, dolor purus ultrices dui, at sodales ex lectus ut risus. Suspendisse in sollicitudin lectus. Suspendisse potenti. Suspendisse posuere metus sed faucibus gravida. Nullam faucibus euismod ipsum, id efficitur tortor semper quis. Aliquam gravida, urna quis consequat laoreet, libero erat condimentum nisi, vitae consequat metus est ac lectus. Integer sapien nisi, consequat mollis augue ac, aliquet feugiat lorem. Mauris eu molestie lacus, ut lobortis lacus.
 
-            <br> Mauris sit amet magna eu purus mattis placerat faucibus ac ex. Sed consectetur magna nec magna sodales, eu laoreet mauris tincidunt. Praesent gravida velit ac est congue blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc egestas suscipit quam nec sodales. Nulla vestibulum convallis risus vel eleifend. Etiam dignissim sed massa et convallis. Nam ornare, lorem posuere aliquet scelerisque, risus augue condimentum sapien, in suscipit lectus lorem sed orci. Nunc eget maximus tortor. Duis rhoncus neque ut turpis tristique eleifend. Sed facilisis ligula orci, sit amet consequat dolor auctor vel. Proin auctor velit non odio ultricies, sit amet iaculis eros semper. Sed ornare quam at tellus hendrerit ornare.</p>
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/la maldicion del titan.png" class="img-fluid rounded-start" alt="La Maldicon del Titan">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">La Maldicion del Titan  </h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit quidem laborum, rem assumenda laudantium numquam consectetur exercitationem vel voluptas quibusdam saepe omnis doloremque incidunt, ullam corrupti et itaque unde?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/la batalla del laberinto.png" class="img-fluid rounded-start" alt="La Batalla del Laberinto">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">La Batalla del Laberinto</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, praesentium soluta inventore sapiente molestias aliquid consequuntur natus odio, repellendus iure tempore omnis alias enim distinctio nemo similique dolorum vel perferendis!</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/el ultimo heroe del olimp.png" class="img-fluid rounded-start" alt="El ultimo Heroe del Olimpo">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"> El Ultimo Heroe del Olimpo</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae obcaecati explicabo maxime nisi blanditiis enim. Eum laborum aut soluta harum minus autem maxime eos assumenda laudantium. Quis, quod. Aut, quis?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 
     <footer>
-        <p>© 2023 Anabel Rojas -  All Rights Reserved.</p>
+        <p class="text-center">© 2023 Anabel Rojas -  All Rights Reserved.</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </html>

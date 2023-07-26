@@ -1,0 +1,28 @@
+@import url(./variables); 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/percy-jackson/img/backgrowun.jpg);
+}
+
+header {
+    .banner{
+        background-image: url(/percy-jackson/img/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5%;
+    }
+    h1 {
+        font-size: 5em;
+        font-family: $estilo-titulo;
+    }
+    nav {
+        &:hover {
+            color: $link;
+        }
+    }
+}
+
