@@ -2,12 +2,43 @@
   box-sizing: border-box;
 }
 
+#title {
+  padding: 30px;
+  background-color: lightgrey;
+}
+
+#title > h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+#title > h3 {
+  margin-left: 340px;
+}
+
+.titulo{
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+
 body {
-  background-image: url(/percy-jackson/img/backgrowun.jpg);
+  background-image: url(/Users/Propietario/RepositorioGit/percy-jackson/img/backgrowun.jpg);
 }
 
 header .banner {
-  background-image: url(/percy-jackson/img/banner.jpg);
+  background-image: url(/Users/Propietario/RepositorioGit/percy-jackson/img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5%;
@@ -19,3 +50,20 @@ header h1 {
 header nav:hover {
   color: #264653;
 }/*# sourceMappingURL=style.css.map */
+@import url(./variables); 
+
+* {
+    box-sizing: border-box;
+}
+
+    h1 {
+        font-size: 5em;
+        font-family: $estilo-titulo;
+    }
+    nav {
+        &:hover {
+            color: $link;
+        }
+    }
+}
+
